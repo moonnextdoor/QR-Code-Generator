@@ -14,3 +14,10 @@ function generateQR() {
 let imgBox = document.getElementById("imgBox");
 let qrImage = document.getElementById("qrImage");
 let qrText = document.getElementById("qrText");
+
+//for enter 
+qrText.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        generateQR();
+    }
+});
